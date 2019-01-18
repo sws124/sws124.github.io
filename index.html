@@ -1,3 +1,50 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <meta charset="UTF-8">
+    <title>數學遊戲</title>
+    <link rel="stylesheet" type="text/css" href="asset/vendor/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="asset/custom.css">
+    <script src="asset/vendor/jquery-3.2.1.min.js"></script>
+    <script src="asset/vendor/popper.min.js"></script>
+    <script src="asset/vendor/bootstrap.min.js"></script>
+    <script src="asset/custom.js"></script>
+</head>
+<body>
+<h1>數學遊戲</h1>
+<div class="option">
+    <div class="option-title">數字類型：</div>
+    <div class="option-content">
+        <button type="button" class="btn btn-warning option-button active" id="allow-subtraction">減數</button>
+        <button type="button" class="btn btn-success option-button" id="allow-multiplication">乘數</button>
+        <button type="button" class="btn btn-info option-button" id="allow-division">除數</button>
+        <button type="button" class="btn btn-danger option-button" id="allow-negative">負數</button>
+        <!--<button type="button" class="btn btn-primary option-button" id="allow-floating">小數</button>-->
+    </div>
+    <div class="option-title">數字範圍：</div>
+    <div class="option-content">
+        <input type="number" class="form-control number-input" id="lower-bound" value="0">
+        <p style="margin: 0 3px;">至</p>
+        <input type="number" class="form-control number-input" id="upper-bound" value="100">
+    </div>
+    <div class="option-title">時限（秒）：</div>
+    <div class="option-content">
+        <input type="number" class="form-control number-input" id="time-limit" value="120">
+    </div>
+    <div style="float: left; width: 100%; height: 3em;"></div>
+    <button type="button" class="btn btn-basic btn-start" id="btn-start">開始</button>
+</div>
+<div class="game-panel">
+    <div class="info margin"></div>
+    <div class="info stat">分數：<span id="score">0</span>分</div>
+    <div class="info stat">時間：<span id="time">0</span>秒</div>
+    <div class="info margin"></div>
+    <div class="info question">
+        <span class="equation" id="equation"></span>
+        <input type="text" class="form-control number-input answer" id="answer" value="">
+    </div>
+    <div class="info message" id="message"></div>
+    <div class="info message" id="message-pokemon"><img id="pokemon" src="" alt="pokemon" height="300" width="300"></div>
+</div>
+</body>
 </html>
