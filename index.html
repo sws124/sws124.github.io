@@ -12,6 +12,18 @@
 </head>
 <body>
 <h1>數學遊戲</h1>
+<div class="game-panel">
+    <div class="info margin"></div>
+    <div class="info stat">分數：<span id="score">0</span>分</div>
+    <div class="info stat">時間：<span id="time">0</span>秒</div>
+    <div class="info margin"></div>
+    <div class="info question">
+        <span class="equation" id="equation"></span>
+        <input type="text" class="form-control number-input answer" id="answer" value="">
+    </div>
+    <div class="info message" id="message"></div>
+    <div class="info message" id="message-pokemon"><img id="pokemon" src="" alt="pokemon" height="200" width="200"></div>
+</div>
 <div class="option">
     <div class="option-title">數字類型：</div>
     <div class="option-content">
@@ -31,20 +43,9 @@
     <div class="option-content">
         <input type="number" class="form-control number-input" id="time-limit" value="120">
     </div>
-    <div style="float: left; width: 100%; height: 3em;"></div>
-    <button type="button" class="btn btn-basic btn-start" id="btn-start">開始</button>
-</div>
-<div class="game-panel">
-    <div class="info margin"></div>
-    <div class="info stat">分數：<span id="score">0</span>分</div>
-    <div class="info stat">時間：<span id="time">0</span>秒</div>
-    <div class="info margin"></div>
-    <div class="info question">
-        <span class="equation" id="equation"></span>
-        <input type="text" class="form-control number-input answer" id="answer" value="">
+    <div class="option-start">
+        <button type="button" class="btn btn-basic btn-start" id="btn-start">開始</button>
     </div>
-    <div class="info message" id="message"></div>
-    <div class="info message" id="message-pokemon"><img id="pokemon" src="" alt="pokemon" height="300" width="300"></div>
 </div>
 </body>
 </html>

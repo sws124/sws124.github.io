@@ -35,7 +35,13 @@ function countdown() {
         $("#time").text((time/100).toFixed(2));
     } else {
         clearInterval(timer);
-        $("#message").text("遊戲結束");
+        $(".question").hide();
+        $("#message").hide();
+        $(".option-button").attr("disabled", false);
+        $("#lower-bound").attr("disabled", false);
+        $("#upper-bound").attr("disabled", false);
+        $("#time-limit").attr("disabled", false);
+        $("#btn-start").show();
         $("#message-pokemon").show();
         if (score < 5) {
             $("#pokemon").attr("src", "asset/img/Q-88.png");
@@ -150,8 +156,14 @@ $(document).ready(function() {
         if ($("#allow-division").hasClass("active")) {
             opList.push("÷");
         }
-        $(".option").hide();
+        $(".option-button").attr("disabled", true);
+        $("#lower-bound").attr("disabled", true);
+        $("#upper-bound").attr("disabled", true);
+        $("#time-limit").attr("disabled", true);
+        $("#btn-start").hide();
         $(".game-panel").show();
+        $(".question").show();
+        $("#message").show();
         $("#message-pokemon").hide();
         $("#answer").focus();
         timer = setInterval(countdown, 10);

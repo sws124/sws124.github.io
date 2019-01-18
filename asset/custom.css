@@ -6,15 +6,13 @@ h1 {
     font-size: 2em;
     font-weight: bold;
     text-align: center;
-    margin-top: 0.67em;
-    margin-bottom: 1.34em;
+    margin: 0.67em 0;
 }
 .option {
     font-size: 1.5em;
     font-weight: bold;
     text-align: center;
-    margin-top: 0.67em;
-    margin-bottom: 0.67em;
+    margin: 0.67em 0;
 }
 .option-title {
     float: left;
@@ -54,6 +52,11 @@ input[type=number]::-webkit-inner-spin-button {
 .btn.active {
     color: black !important;
     font-weight: bold;
+}
+.option-start {
+    float: left;
+    width: 100%;
+    margin: 1em 0;
 }
 .btn-start {
     font-size: 1.5em;
