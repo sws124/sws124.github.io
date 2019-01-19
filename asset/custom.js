@@ -12,55 +12,55 @@ function countdown() {
         $("#btn-start").show();
         var interval = 10;
         if (score <= interval * 1) {
-            $("#message").text("你得到一隻爛泥怪！");
+            $("#message").text("你得到名為Gummy的爛泥怪！");
             $("#pokemon").attr("src", "asset/img/Q-88.png");
         } else if (score <= interval * 2) {
-            $("#message").text("你得到一隻小拳石！");
+            $("#message").text("你得到名為Rocky的小拳石！");
             $("#pokemon").attr("src", "asset/img/P-74.png");
         } else if (score <= interval * 3) {
-            $("#message").text("你得到一隻鐵甲犀牛！");
+            $("#message").text("你得到名為Godzilla的鐵甲犀牛！");
             $("#pokemon").attr("src", "asset/img/O-111.png");
         } else if (score <= interval * 4) {
-            $("#message").text("你得到一隻大顎蟻！");
+            $("#message").text("你得到名為Diaval的大顎蟻！");
             $("#pokemon").attr("src", "asset/img/N-328.png");
         } else if (score <= interval * 5) {
-            $("#message").text("你得到一隻巴爾郎！");
+            $("#message").text("你得到名為Bruce的巴爾郎！");
             $("#pokemon").attr("src", "asset/img/M-236.png");
         } else if (score <= interval * 6) {
-            $("#message").text("你得到一隻大岩蛇！");
+            $("#message").text("你得到名為Vibranium的大岩蛇！");
             $("#pokemon").attr("src", "asset/img/L-95.png");
         } else if (score <= interval * 7) {
-            $("#message").text("你得到一隻飛天螳螂！");
+            $("#message").text("你得到名為Iron Man的飛天螳螂！");
             $("#pokemon").attr("src", "asset/img/K-123.png");
         } else if (score <= interval * 8) {
-            $("#message").text("你得到一隻狃拉！");
+            $("#message").text("你得到名為Dark Knight的狃拉！");
             $("#pokemon").attr("src", "asset/img/J-215.png");
         } else if (score <= interval * 9) {
-            $("#message").text("你得到一隻行路草！");
+            $("#message").text("你得到名為Mulan的行路草！");
             $("#pokemon").attr("src", "asset/img/I-43.png");
         } else if (score <= interval * 10) {
-            $("#message").text("你得到一隻拉魯拉絲！");
+            $("#message").text("你得到名為Rapunzel的拉魯拉絲！");
             $("#pokemon").attr("src", "asset/img/H-280.png");
         } else if (score <= interval * 11) {
-            $("#message").text("你得到一隻雪童子！");
+            $("#message").text("你得到名為Snow White的雪童子！");
             $("#pokemon").attr("src", "asset/img/G-361.png");
         } else if (score <= interval * 12) {
-            $("#message").text("你得到一隻夢妖！");
+            $("#message").text("你得到名為Maleficent的夢妖！");
             $("#pokemon").attr("src", "asset/img/F-200.png");
         } else if (score <= interval * 13) {
-            $("#message").text("你得到一隻三蜜蜂！");
+            $("#message").text("你得到名為Elsa的三蜜蜂！");
             $("#pokemon").attr("src", "asset/img/E-415.png");
         } else if (score <= interval * 14) {
-            $("#message").text("你得到一隻帕奇利茲！");
+            $("#message").text("你得到名為Sweet Pea的帕奇利茲！");
             $("#pokemon").attr("src", "asset/img/D-417.png");
         } else if (score <= interval * 15) {
-            $("#message").text("你得到一隻笨笨魚！");
+            $("#message").text("你得到名為Ariel的笨笨魚！");
             $("#pokemon").attr("src", "asset/img/C-349.png");
         } else if (score <= interval * 16) {
-            $("#message").text("你得到一隻小火馬！");
+            $("#message").text("你得到名為Belle的小火馬！");
             $("#pokemon").attr("src", "asset/img/B-77.png");
         } else {
-            $("#message").text("你得到一隻伊貝！");
+            $("#message").text("你得到名為Giselle的伊貝！");
             $("#pokemon").attr("src", "asset/img/A-133.png");
         }
         $("#message-pokemon").show();
