@@ -11,7 +11,7 @@ function countdown() {
         $(".option").show();
         $("#btn-start").show();
         var interval = 10;
-        if (score <= interval * 1) {
+        if (score <= interval) {
             $("#message").text("你得到名為Gummy的爛泥怪！");
             $("#pokemon").attr("src", "asset/img/Q-88.png");
         } else if (score <= interval * 2) {
@@ -33,7 +33,7 @@ function countdown() {
             $("#message").text("你得到名為Iron Man的飛天螳螂！");
             $("#pokemon").attr("src", "asset/img/K-123.png");
         } else if (score <= interval * 8) {
-            $("#message").text("你得到名為Dark Knight的狃拉！");
+            $("#message").text("你得到名為Shadowrun的狃拉！");
             $("#pokemon").attr("src", "asset/img/J-215.png");
         } else if (score <= interval * 9) {
             $("#message").text("你得到名為Mulan的行路草！");
